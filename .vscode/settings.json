@@ -1,0 +1,14 @@
+{
+  "search.exclude": {
+    "**/coverage": true,
+    "**/build": true,
+    "**/node_modules": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+  "eslint.validate": [
+    "javascript",
+    { "language": "typescript", "autoFix": true }
+  ]
+}
