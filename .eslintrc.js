@@ -10,14 +10,11 @@ module.exports = {
   ],
   extends: [
     'airbnb-typescript/base',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
     'plugin:promise/recommended',
     'plugin:node/recommended',
-    'prettier',
+    'plugin:prettier/recommended',
     'prettier/@typescript-eslint'
   ],
   env: {
