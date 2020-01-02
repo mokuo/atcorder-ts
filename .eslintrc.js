@@ -5,20 +5,25 @@ module.exports = {
     '@typescript-eslint',
     'eslint-comments',
     'jest',
-    'promise',
-    'node'
+    'promise'
   ],
   extends: [
     'airbnb-typescript/base',
     'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
     'plugin:promise/recommended',
-    'plugin:node/recommended',
     'plugin:prettier/recommended',
     'prettier/@typescript-eslint'
   ],
   env: {
     node: true,
-    'jest/globals': true
+    es6: true,
+    'jest/globals': true,
+  },
+  parserOptions: {
+    ecmaVersion: 2019
+  },
+  rules: {
+    'import/prefer-default-export': 'off'
   }
 };
