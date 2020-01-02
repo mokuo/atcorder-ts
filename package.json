@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest",
     "test:watch": "jest --watch",
-    "try": "cat src/input.txt | npx ts-node src/index.ts"
+    "try": "cat src/input.txt | npx ts-node src/try.ts",
+    "try:prod": "npm run build && cat src/input.txt | node build/try.js"
   },
   "author": "",
   "license": "ISC",
